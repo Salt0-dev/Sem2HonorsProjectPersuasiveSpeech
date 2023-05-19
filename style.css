@@ -6,6 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: justify;
 }
 
 /* Style the heading */
@@ -15,17 +16,9 @@ h1 {
 
 /* Style the paragraphs */
 p {
-  margin-bottom: 0.75em;
+  margin-bottom: 0.5em;
   text-indent: 1em;
   line-height: 1.5;
-}
-
-p:first-child {
-  margin-top: 0;
-}
-
-p:last-child {
-  margin-bottom: 0;
 }
 
 /* Style the links */
