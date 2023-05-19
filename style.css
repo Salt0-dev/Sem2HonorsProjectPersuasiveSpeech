@@ -16,8 +16,9 @@ h1 {
 
 /* Style the paragraphs */
 p {
-  margin-bottom: 0.5em;
-  text-indent: 1em;
+  margin-bottom: 1em;
+  padding-left: 40px;
+  text-indent: -30px;
   line-height: 1.5;
 }
 
