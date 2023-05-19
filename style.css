@@ -3,6 +3,9 @@ body {
     font-family: "Times New Roman", Times, serif;
     background-color: #f2f2f2;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   /* Style the heading */
@@ -29,6 +32,7 @@ body {
   /* Style the works cited section */
   #works-cited {
     margin-top: 40px;
+    text-align: center;
   }
   
   /* Style the works cited heading */
