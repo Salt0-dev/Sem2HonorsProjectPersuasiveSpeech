@@ -1,21 +1,19 @@
 /* Set body font and background */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Times New Roman", Times, serif;
     background-color: #f2f2f2;
     margin: 20px;
   }
   
   /* Style the heading */
   h1 {
-    color: #333;
-    font-size: 28px;
     text-align: center;
   }
   
   /* Style the paragraphs */
   p {
-    margin-bottom: 15px;
-    line-height: 1.5;
+    margin-bottom: 1em;
+    text-indent: 1em;
   }
   
   /* Style the links */
@@ -28,17 +26,41 @@ body {
     text-decoration: underline;
   }
   
-  /* Style the iframe */
-  iframe {
-    display: block;
-    margin: 20px auto;
+  /* Style the works cited section */
+  #works-cited {
+    margin-top: 40px;
   }
   
-  /* Adjust the width of the iframe for responsiveness */
-  @media (max-width: 480px) {
-    iframe {
-      width: 100%;
-      height: 80px;
-    }
+  /* Style the works cited heading */
+  #works-cited h2 {
+    text-align: center;
+  }
+  
+  /* Style the works cited list */
+  #works-cited ol {
+    counter-reset: works-cited-counter;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style the works cited entries */
+  #works-cited li {
+    counter-increment: works-cited-counter;
+    margin-bottom: 0.5em;
+  }
+  
+  /* Style the works cited entry numbers */
+  #works-cited li::before {
+    content: counter(works-cited-counter) ".";
+    font-weight: bold;
+    margin-right: 0.5em;
+  }
+  
+  /* Style the project PDF link */
+  #project-pdf-link {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
   }
   
